@@ -8,13 +8,6 @@ Courses you choose in each semester are career-defining and what you specialize 
 Why we chose this:
 Currently, there are no such applications available to help and guide students. Our product could improve students’ experiences in learning and help them choose the right class based on their interests.
 
-## Team Members
-- Gary Fang
-- Raghavi Vannala  
-- Swati Lamba   
-- Yu-Ching Lin
-- Yuechen Feng
-
 ## Stakeholders
 - University students and staff
 
