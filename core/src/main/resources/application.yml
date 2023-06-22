@@ -1,0 +1,69 @@
+spring:
+  data:
+    elasticsearch: #elastic config
+      cluster-name: ${CLUSTER_NAME:elastic}
+      cluster-nodes: ${CLUSTER_NODES:localhost:9300}
+      repositories:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_DATASOURCE:localhost:3306}/CourseQuest?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  #      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  profiles:
+    include: default
+  security:
+    user:
+      name: test
+      password: 123456
+      roles:
+        - user
+        - admin
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 590629088207-ta5nudl72tbcseavnji0dspl4dg24323.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+    api:
+     elasticsearch:
+       uri: http://${CLUSTER_NAME:localhost}:9200/
+       search: _search
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+application:
+  metadata-file-path: src/main/resources/static/data.csv
+  webscraping:
+    urls: [https://cs.vt.edu/Undergraduate/courses.html]
+  labels:
+    degreetypes: 
+      phd: Phd
+      pg: Masters
+      ug: UG
+  jobs: #Fire at 10:15 AM every day
+   cronSchedule: 0 0 13 ? 1/1 MON#1
+   cronScheduleElastic: 0 0 13 ? 1/1 TUE#1 //0 0 * * * *
+es:
+  hostname: localhost
+  port: 9200
+  username: NA
+  password: password

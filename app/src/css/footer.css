@@ -1,0 +1,51 @@
+.Footer {
+    background-color: rgb(239, 239, 239);
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -4em;
+}
+
+.about-us {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.about-us:hover {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #630031;
+}
+
+.Container {
+    margin-bottom: 0;
+}
+
+.FooterColumns {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterSubtitle {
+    letter-spacing: 2px;
+}
+
+.FooterLink {
+    color: #888686;
+}
+
+.FooterLink:hover {
+    text-decoration: underline;
+
+}

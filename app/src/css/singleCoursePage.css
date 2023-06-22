@@ -1,0 +1,182 @@
+.singleCoursePage {
+    padding: 1em;
+}
+
+.course-container {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.courseName {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.rating-container{
+    display: inline-block;
+}
+
+.ratingPoint{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rating {
+    color: #007bff;
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 0.2em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    vertical-align: top;
+}
+
+.rateOutof {
+    color: #ccc;
+    display: inline-block;
+    font-size: 1.2em;
+    vertical-align: bottom;
+    margin-bottom: 0.2em;
+}
+
+.ratingBar{
+    vertical-align: top;
+}
+
+.courseDescription {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    display: inline-block;
+    margin-left: 2.5em;
+    vertical-align: top;
+}
+
+.functionButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+}
+
+.rate-review-but {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0.3em 0.5em;
+}
+
+.rate-review-but:hover {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+    font-size: 1.2em;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+}
+
+.star-ratings {
+    display: inline-block;
+}
+
+.star-ratings svg {
+    fill: #007bff;
+}
+
+@media only screen and (max-width: 768px) {
+    .functionButtons {
+        flex-direction: column;
+    }
+
+    .rate-review-but {
+        margin-bottom: 1em;
+    }
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.reviewBlock {
+    background-color: #fff;
+    padding: 20px 20px 0px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.userIcon {
+    color: #007bff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.poster {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reviewRate{
+    margin-top: -0.4em;
+    margin-left: 1em;
+}
+
+.reviewContent {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.reviewSubQues {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reviewSubAns {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.reviewDate {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: -2em;
+}
+
+.reviewBlock div {
+    display: flex;
+}
+
+.accordion-button {
+    background-color: white;
+    color: #666666;
+    font-size: 28px;
+    font-weight: 500;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #666666;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.accordion-item {
+    border: none;
+}

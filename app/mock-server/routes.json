@@ -1,0 +1,6 @@
+{
+  "/api/*": "/$1",
+  "/university/:id/courses/:courseId": "/courses/:courseId",
+  "/university/:id/courses/:coursesId/review": "/courses/:coursesId/review"
+
+}

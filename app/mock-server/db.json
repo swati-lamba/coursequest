@@ -1,0 +1,66 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "crn_number": 4704,
+      "name": "CS4704: Software Engineering Capstone",
+      "rating": 4,
+      "instructor": "Dr. Bob",
+      "dept_name_id": 1,
+      "credits": 3,
+      "description": "Senior project course integrating software engineering knowledge and skills acquired in previous courses. Team-based approach to problem formulation, requirements engineering, architecture, design, implementation, integration, documentation and delivery of a software system that solves a real-world problem. (3H,3C)",
+      "date_created": "time",
+      "level": 400,
+      "universityId": 1
+    },
+    {
+      "id": 2,
+      "crn_number": 1114,
+      "name": "CS1114: Introduction to Software Design",
+      "rating": 3,
+      "instructor": "Dr. Joe",
+      "dept_name_id": 1,
+      "credits": 3,
+      "description": "Fundamental concepts of programming from an object-oriented perspective. Basic software engineering principles and programming skills in a programming language that supports the object-oriented paradigm. Simple data types, control structures, array and string data structures, basic algorithms, testing and debugging. A basic model of the computer as an abstract machine. Modeling and problem-solving skills applicable to programming at this level.",
+      "date_created": "time",
+      "level": 400,
+      "universityId": 1
+    },
+    {
+      "id": 3,
+      "crn_number": 2354,
+      "name": "BCHM 2354 - Biochemical Techniques",
+      "rating": 3,
+      "instructor": "Dr. Bio",
+      "dept_name_id": 1,
+      "credits": 3,
+      "description": "Fundamental aspects of biochemical laboratory measurements. Properties of biomolecules and methods for their isolation, separation, detection and quantification. Calculations required to provide quantitative biomolecular data. Common instrumentation in biochemical laboratories, their principles of operation, and their roles in biochemical assays and measuring biochemical interactions. Overview of on-line resources for biochemical information.",
+      "date_created": "time",
+      "level": 200,
+      "universityId": 1
+    }
+  ],
+  "university": [
+    {"id":  1, "name": "Virginia Tech"},
+    {"id":  2, "name":  "University of Virginia"}
+  ],
+  "reviews": [
+    {"id": 1, "coursesId": 1, "userId": 1, "poster":  "Eugene", "rating": 4, "content":  "This is review #1", "date_created": "[fake time]", "professor":  "Dr. M", "delivery":  "In person", "workload":  "Heavy"},
+    {"id": 2, "coursesId": 1, "userId": 1, "poster":  "Eugene", "rating": 3, "content":  "This is review #2", "date_created": "[fake time]", "professor":  "Dr. K", "delivery":  "Online", "workload":  "Light"},
+    {"id": 3, "coursesId": 1, "userId": 2, "poster":  "Bob", "rating": 2, "content":  "This is review #3", "date_created": "[fake time]", "professor":  "Dr. J", "delivery":  "Hybrid", "workload":  "Moderate"}
+  ],
+  "departments": [
+    {"id": 1, "name": "CS", "universityId": 1},
+    {"id": 2, "name": "CE", "universityId": 1},
+    {"id": 3, "name": "Civil", "universityId": 1}
+  ],
+  "levels": [
+    {"id": 1 , "name": "UG", "universityId": 1},
+    {"id": 2 , "name": "Master", "universityId": 1},
+    {"id": 3 , "name": "Phd", "universityId": 1}
+  ],
+  "user": [
+    {"id":  1, "name": "Eugene"},
+    {"id":  2, "name": "Bob"}
+  ]
+}

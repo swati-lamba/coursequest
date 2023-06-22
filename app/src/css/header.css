@@ -1,0 +1,55 @@
+.Header {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand img {
+    height: 2rem;
+    width: auto;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    color:  #888686;
+    margin: 0 1em;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.button-login {
+    background-color: transparent;
+    color: #888686;
+    border: 2px solid #888686;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: 500;
+    margin-right: 1rem;
+    text-underline: none;
+}
+
+.button-profile {
+    font-size: 25px;
+    margin-right: 0.5em;
+}
+
+.button-logout {
+    background-color: transparent;
+    color: #888686;
+    border: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.button-logout:hover {
+    color: #000;
+}
